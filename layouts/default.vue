@@ -29,9 +29,9 @@
             <a class="button is-primary">
               <strong>สมัครสมาชิก</strong>
             </a>
-            <a class="button is-light">
+            <nuxt-link to="/login" class="button is-light">
               เข้าสู่ระบบ
-            </a>
+            </nuxt-link>
           </div>
         </b-navbar-item>
       </template>
