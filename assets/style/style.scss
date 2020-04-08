@@ -1,0 +1,11 @@
+$family-primary: "Bai Jamjuree", sans-serif;
+$family-secondary: "Kanit", sans-serif;
+
+$primary: #27496d;
+
+h1,h2,h3,h4,h5,h6,nav {
+    font-family: $family-secondary;
+}
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";

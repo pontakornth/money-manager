@@ -15,7 +15,14 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css?family=Bai+Jamjuree|Kanit&display=swap'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -24,7 +31,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/style/style.scss'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -45,7 +52,8 @@ export default {
     'nuxt-buefy',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/style-resources'
   ],
   /*
    ** Build configuration
