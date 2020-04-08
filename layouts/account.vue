@@ -37,8 +37,11 @@
       </template>
     </b-navbar>
 
-    <section class="columns">
-      <div class="column is-12">
+    <section class="columns is-mobile">
+      <div class="column is-2 is-hidden-tablet">
+        <Menu />
+      </div>
+      <div class="column is-12-mobile is-10-tablet">
         <nuxt />
       </div>
     </section>
@@ -46,5 +49,13 @@
 </template>
 
 <script>
-export default {}
+import { Vue, Component } from 'nuxt-property-decorator'
+import Menu from '~/components/Menu.vue'
+@Component({
+  components: {
+    Menu
+  }
+})
+class Account extends Vue {}
+export default Account
 </script>
