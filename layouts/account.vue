@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-full">
     <b-navbar type="is-primary">
       <template slot="brand">
         <b-navbar-item tag="nuxt-link" to="/">
@@ -37,8 +37,8 @@
       </template>
     </b-navbar>
 
-    <section class="columns is-mobile">
-      <div class="column is-2 is-hidden-tablet">
+    <section class="columns h-full is-mobile">
+      <div class="column is-2 has-background-light is-hidden-mobile">
         <Menu />
       </div>
       <div class="column is-12-mobile is-10-tablet">
