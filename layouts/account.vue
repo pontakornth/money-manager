@@ -42,7 +42,9 @@
         <Menu />
       </div>
       <div class="column is-12-mobile is-10-tablet">
-        <nuxt />
+        <div class="container gap-2">
+          <nuxt />
+        </div>
       </div>
     </section>
   </div>
@@ -59,3 +61,10 @@ import Menu from '~/components/Menu.vue'
 class Account extends Vue {}
 export default Account
 </script>
+
+<style lang="scss">
+.gap-2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+</style>
