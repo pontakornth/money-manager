@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <h1 class="title is-1">ไม่มีรายการ</h1>
+  <div>
+    <h1 class="title is-1">บัญชีรายรับรายจ่าย</h1>
   </div>
 </template>
 
