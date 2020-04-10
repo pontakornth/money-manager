@@ -14,22 +14,6 @@ import Navbar from '~/components/Navbar.vue'
 export default {
   components: {
     Navbar
-  },
-  data() {
-    return {
-      items: [
-        {
-          title: 'Home',
-          icon: 'home',
-          to: { name: 'index' }
-        },
-        {
-          title: 'Inspire',
-          icon: 'lightbulb',
-          to: { name: 'inspire' }
-        }
-      ]
-    }
   }
 }
 </script>
