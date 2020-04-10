@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="padded">
     <h1 class="title is-1">บัญชีรายรับรายจ่าย</h1>
     <form class="ledger-form">
       <b-field label="รายการ">
         <b-input type="text" name="title" placeholder="กะเพราหมูสับ" />
       </b-field>
-      <div class="columns is-gapless">
+      <div class="columns">
         <div class="column is-4">
           <b-field label="ประเภท">
             <b-select>
@@ -30,21 +30,45 @@
         </div>
       </div>
     </form>
+    <LedgerTable class="mt-1" :transactions="transactions" />
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
+import LedgerTable from '~/components/LedgerTable.vue'
 
 @Component({
-  layout: 'account'
+  layout: 'account',
+  components: {
+    LedgerTable
+  }
 })
-class Ledger extends Vue {}
+class Ledger extends Vue {
+  transactions = [
+    {
+      id: 1,
+      title: 'ค่าขนม',
+      income: 250
+    },
+    {
+      id: 2,
+      title: 'ค่าข้าวกลางวัน',
+      expense: 25
+    }
+  ]
+}
 export default Ledger
 </script>
 
 <style lang="scss" scoped>
 .ledger-form {
   width: 50%;
+}
+.padded {
+  padding: 1rem;
+}
+.mt-1 {
+  margin-top: 1rem;
 }
 </style>
