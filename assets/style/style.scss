@@ -16,5 +16,9 @@ html,
     height: 100%;
 }
 
+.padded {
+  padding: 1rem;
+}
+
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
