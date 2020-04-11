@@ -1,11 +1,13 @@
 <template>
   <div class="padded">
-    <h1 class="title is-1">ข้อมูลการใช้เงิน</h1>
+    <h1 class="title is-1">สถิติ</h1>
     <div class="columns is-multiline">
       <div class="column is-half">
+        <h2 class="title is-2 has-text-centered">ข้อมูลรายจ่าย</h2>
         <DonutChart :chart-data="expenseData" />
       </div>
       <div class="column is-half">
+        <h2 class="title is-2 has-text-centered">ข้อมูลรายรับ</h2>
         <DonutChart :chart-data="incomeData" />
       </div>
     </div>
